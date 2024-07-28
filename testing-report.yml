@@ -1,0 +1,56 @@
+---
+- summary: |
+    Успешный поиск товара по ключевому слову
+  status: pass
+
+- summary: |
+    Успешный поиск товара по категории
+  status: fail
+
+- summary: |
+    Успешный фильтр товаров по бренду
+  status: fail
+
+- summary: |
+    Успешный фильтр товаров по цене
+  status: pass
+
+- summary: |
+    Успешный просмотр карточки товара
+  status: pass
+
+- summary: |
+    Успешное добавление товара в корзину
+  status: pass
+
+- summary: |
+    Просмотр содержимого корзины
+  status: pass
+
+- summary: |
+    Проверка скорости загрузки сайта
+  status: pass
+
+- summary: |
+    Проверка безопасности сайта и защиты данных пользователя
+  status: fail
+
+- summary: |
+    Проверка адаптивности сайта
+  status: fail
+
+- summary: |
+    Проверка кроссбраузерности сайта
+  status: pass
+
+- summary: |
+    Проверка регистрации пользователя
+  status: fail
+
+- summary: |
+    Проверка обратной связи
+  status: fail
+
+- summary: |
+    Проверка мультиязычности сайта
+  status: fail
