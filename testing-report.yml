@@ -9,7 +9,7 @@
 
 - summary: |
     Успешный фильтр товаров по бренду
-  status: fail
+  status: pass
 
 - summary: |
     Успешный фильтр товаров по цене
