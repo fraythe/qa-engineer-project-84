@@ -1,0 +1,59 @@
+---
+- summary: |
+    Нельзя отменить выбранную категорию товаров
+  environment: |
+    Firefox 114.0.2 (64-битная)
+    MacOS High Sierra 10.13.6
+  steps-to-reproduce: |
+    1. Нажимаем кнопку "Категория"
+    2. Выбираем категорию "beauty"
+  expected-result: |
+    Можно ставить и убирать галочку у категории
+  actual-result: |
+    Галочку можно поставить, но не убрать
+
+- summary: |
+    В корзине "съезжает" количество товара
+  environment: |
+    Firefox 114.0.2 (64-битная)
+    MacOS High Sierra 10.13.6
+  steps-to-reproduce: |
+    1. Нажимаем на кнопку "Add to cart" на товаре Essence Mascara Lash Princess и Powder Canister
+    2. Нажимаем на кнопку "Cart"
+  expected-result: |
+    Количества товаров ровным столбцом
+  actual-result: |
+    Количество первого товара не под вторым
+
+- summary: |
+    Небезопасная передача данных
+  environment: |
+    Firefox 114.0.2 (64-битная)
+    MacOS High Sierra 10.13.6
+  steps-to-reproduce: |
+    Открываем DevTools, вкладка Network
+  expected-result: |
+    The connection used to fetch this recource was secure
+  actual-result: |
+    Столбец File, random.css, author.js - The connection used to fetch this recource was not secure
+
+- summary: |
+    Мобильная версия сайта некорректно отображается
+  environment: |
+    Firefox 114.0.2 (64-битная)
+    MacOS High Sierra 10.13.6
+  steps-to-reproduce: |
+    1. Открываем DevTools на главной странице магазина
+    2. Выбираем меню адаптивности
+    3. Выбираем устройство iPhone SE
+    4. Добавляем в корзину несколько товаров 
+    5. Переходим в корзину
+  expected-result: |
+    Текст и кнопки на своем месте
+  actual-result: |
+    Некорректное отображение
+
+
+
+
+
