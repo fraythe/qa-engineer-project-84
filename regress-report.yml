@@ -22,5 +22,9 @@ test-cases:
 
   - summary: |
       Успешное добавление товара в корзину
+    status: pass
+
+  - summary: |
+      Просмотр содержимого корзины
     status: fail
   
