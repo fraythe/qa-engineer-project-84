@@ -44,6 +44,10 @@
   status: pass
 
 - summary: |
+    Описание и фото соответствуют товару
+  status: pass
+
+- summary: |
     Проверка регистрации пользователя
   status: fail
 
