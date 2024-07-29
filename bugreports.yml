@@ -26,6 +26,19 @@
     Количество первого товара не под вторым
 
 - summary: |
+    В корзине указана только цена без скидки
+  environment: |
+    Firefox 114.0.2 (64-битная)
+    MacOS High Sierra 10.13.6
+  steps-to-reproduce: |
+    1. Нажимаем на кнопку "Add to cart" на товаре Essence Mascara Lash Princess и Powder Canister
+    2. Нажимаем на кнопку "Cart"
+  expected-result: |
+    Указана обычная цена и цена со скидкой
+  actual-result: |
+    Указана только цена без скидки
+
+- summary: |
     Небезопасная передача данных
   environment: |
     Firefox 114.0.2 (64-битная)
