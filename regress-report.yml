@@ -1,0 +1,26 @@
+---
+test-cases:
+  - summary: |
+      Успешный поиск товара по ключевому слову
+    status: pass
+
+  - summary: |
+      Успешный поиск товара по категории
+    status: pass
+
+  - summary: |
+      Успешный поиск товара по бренду
+    status: fail
+
+  - summary: |
+      Успешный фильтр товаров по цене
+    status: fail
+
+  - summary: |
+      Успешный просмотр карточки товара
+    status: pass
+
+  - summary: |
+      Успешное добавление товара в корзину
+    status: fail
+  
