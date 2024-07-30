@@ -27,4 +27,39 @@ test-cases:
   - summary: |
       Просмотр содержимого корзины
     status: fail
-  
+
+  - summary: |
+      Проверка скорости загрузки сайта
+    status: pass
+
+  - summary: |
+      Проверка безопасности сайта и защиты данных пользователя
+    status: pass
+
+  - summary: |
+      Проверка адаптивности сайта
+    status: fail
+
+  - summary: |
+      Проверка кроссбраузерности сайта
+    status: fail
+
+  - summary: |
+      Описание и фото соответствуют товару
+    status: pass
+
+  - summary: |
+      Проверка регистрации пользователя
+    status: fail
+
+  - summary: |
+      Проверка заказа товара
+    status: fail
+
+  - summary: |
+      Проверка обратной связи
+    status: fail
+
+  - summary: |
+      Проверка мультиязычности сайта
+    status: fail
