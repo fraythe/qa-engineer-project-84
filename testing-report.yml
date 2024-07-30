@@ -52,6 +52,10 @@
   status: fail
 
 - summary: |
+    Проверка заказа товара
+  status: fail
+
+- summary: |
     Проверка обратной связи
   status: fail
 
