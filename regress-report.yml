@@ -63,3 +63,146 @@ test-cases:
   - summary: |
       Проверка мультиязычности сайта
     status: fail
+
+bugreports:
+  - summary: |
+      Показываются товары не нужной категории
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      1. Нажимаем на категорию "Furniture"
+      2. Выбираем категорию "Essence"
+    expected-result: |
+      Написано "Нет товаров этого бренда в данной категории"
+    actual-result: |
+      Показаны все товары магазина
+
+  - summary: |
+      Не фильтруются товары по цене
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      В "From - To" вводим 100 и 500
+    expected-result: |
+      Показаны товары с ценой из заданного диапазона
+    actual-result: |
+      Показаны все товары магазина
+
+  - summary: |
+      Не фильтруются товары по цене
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      В "From - To" вводим 100 и 500
+    expected-result: |
+      Показаны товары с ценой из заданного диапазона
+    actual-result: |
+      Показаны все товары магазина
+  
+  - summary: |
+      В корзине "съезжает" количество товара
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      1. Нажимаем на кнопку "Add to cart" на товаре Essence Mascara Lash Princess и Powder Canister
+      2. Нажимаем на кнопку "Cart"
+    expected-result: |
+      Количества товаров ровным столбцом
+    actual-result: |
+      Количество первого товара не под вторым
+
+  - summary: |
+      В корзине указана только цена без скидки
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      1. Нажимаем на кнопку "Add to cart" на товаре Essence Mascara Lash Princess и Powder Canister
+      2. Нажимаем на кнопку "Cart"
+    expected-result: |
+      Указана обычная цена и цена со скидкой
+    actual-result: |
+      Указана только цена без скидки
+
+  - summary: |
+      Мобильная версия сайта некорректно отображается
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      1. Открываем DevTools на главной странице магазина
+      2. Выбираем меню адаптивности
+      3. Выбираем устройство iPhone SE
+      4. Добавляем в корзину несколько товаров 
+      5. Переходим в корзину
+    expected-result: |
+      Текст и кнопки на своем месте, верстка подстраивается под размеры экрана
+    actual-result: |
+      Текст выходит за пределы блоков и кнопок
+
+   - summary: |
+      В Safari меняется визуал сайта
+    environment: |
+      Safari
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      empty
+    expected-result: |
+      Сайт одинаково отображается во всех браузерах
+    actual-result: |
+      Шапка сайта уже, чем в других браузерах, название сайта не умещается
+
+  - summary: |
+      Пользователь не может зарегистрироваться
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      empty
+    expected-result: |
+      Пользователь регистрируется, есть способ связи с ним
+    actual-result: |
+      Пользователь не оставляет никаких контактов при заказе
+
+  - summary: |
+      Пользователь не может заказать товар
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      1. Нажать у любого товара "Add to cart"
+      2. Нажать "Cart"
+    expected-result: |
+      Пользователь может заказать товар
+    actual-result: |
+      Пользователь может добавить товар в корзину, но не может сделать заказ
+
+  - summary: |
+      Пользователь не может связаться с администрацией магазина, технической поддержкой
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      empty
+    expected-result: |
+      Пользователь может увидеть номер телефона/почту для связи
+    actual-result: |
+      На сайте не предусмотрена возможность обратной связи
+
+  - summary: |
+      Описание товара не переводится при смене на русский язык
+    environment: |
+      Firefox 114.0.2 (64-битная)
+      MacOS High Sierra 10.13.6
+    steps-to-reproduce: |
+      Нажимаем на любой товар
+    expected-result: |
+      Описание товара на русском
+    actual-result: |
+      Описание товара на английском
+
+  
