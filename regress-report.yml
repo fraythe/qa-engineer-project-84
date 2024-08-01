@@ -144,7 +144,7 @@ bugreports:
     actual-result: |
       Текст выходит за пределы блоков и кнопок
 
-   - summary: |
+  - summary: |
       В Safari меняется визуал сайта
     environment: |
       Safari
