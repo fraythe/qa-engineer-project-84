@@ -44,17 +44,13 @@
   status: pass
 
 - summary: |
-    Проверка регистрации пользователя
-  status: fail
-
-- summary: |
-    Проверка заказа товара
-  status: fail
-
-- summary: |
-    Проверка обратной связи
-  status: fail
-
-- summary: |
     Проверка мультиязычности сайта
+  status: fail
+
+- summary: |
+    Успешное удаление товара из корзины
+  status: pass
+
+- summary: |
+    Успешное оформление заказа
   status: fail
