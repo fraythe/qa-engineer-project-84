@@ -33,10 +33,6 @@ test-cases:
     status: pass
 
   - summary: |
-      Проверка безопасности сайта и защиты данных пользователя
-    status: pass
-
-  - summary: |
       Проверка адаптивности сайта
     status: fail
 
